@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/persona5-menu/static/css/main.e342d44c.css",
+    "main.js": "/persona5-menu/static/js/main.4452bb7e.js",
+    "static/js/787.bc775655.chunk.js": "/persona5-menu/static/js/787.bc775655.chunk.js",
+    "static/media/background.png": "/persona5-menu/static/media/background.351f6287f6d083e50f64.png",
+    "static/media/Persona5MenuFontPrototype-Regular.otf": "/persona5-menu/static/media/Persona5MenuFontPrototype-Regular.eaf9adfa13ad3376ffd6.otf",
+    "static/media/Persona5MenuFontPrototype-Regular.ttf": "/persona5-menu/static/media/Persona5MenuFontPrototype-Regular.eaf9adfa13ad3376ffd6.ttf",
+    "index.html": "/persona5-menu/index.html",
+    "main.e342d44c.css.map": "/persona5-menu/static/css/main.e342d44c.css.map",
+    "main.4452bb7e.js.map": "/persona5-menu/static/js/main.4452bb7e.js.map",
+    "787.bc775655.chunk.js.map": "/persona5-menu/static/js/787.bc775655.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e342d44c.css",
+    "static/js/main.4452bb7e.js"
+  ]
+}
