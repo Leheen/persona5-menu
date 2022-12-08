@@ -1,0 +1,94 @@
+.menu {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 128px);
+    transform: translate(-50%, -50%);
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-link {
+    text-decoration: none;
+    display: block;
+    transform: scale(0.8);
+    transition: transform 0.5s;
+    margin-bottom: -18px;
+    margin-left: auto;
+
+    .shape-wrapper {
+        display: none;
+        mix-blend-mode: multiply;
+        filter: sepia(50%) saturate(3);
+
+        .shape {
+            transition: all .1s linear;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            right: 0;
+            height: 35px;
+            overflow: hidden;
+            -webkit-animation-name: jelly;
+            animation-name: jelly;
+            -webkit-transform-origin: center;
+            transform-origin: center;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    
+            &.cyan-fill {
+                mix-blend-mode: screen;
+                animation-delay: 0.05s;
+                animation-duration: .4s;
+            }
+    
+            &.red-fill {
+                animation-duration: .45s;
+                animation-delay: 0.08s;
+                opacity: .8;
+            }
+        }
+    }
+
+    &:hover {
+        transform: scale(1) rotate(-6deg);
+        z-index: 999;
+
+        &:nth-child(2n) {
+            transform: scale(1) rotate(6deg);
+        }
+
+        .shape-wrapper {
+            display: block;
+
+            .shape.cyan-fill {
+                transform: scale(2, .1);
+            }
+        }
+    }
+}
+
+@for $i from 1 through 7 {
+    .menu-link:nth-child(#{$i + 1}) {
+        margin-right: $i * 15px;
+    }
+}
+
+@keyframes jelly {
+    0% {
+        width: 100%;
+        transform: scale(1.25, 1) skewX(20deg) translateY(3px) rotateX(40deg) rotateY(10deg) rotateZ(-10deg);
+    }
+
+    50% {
+        width: 100%;
+        transform: scale(1.25, 1.1) skewX(-15deg) translateY(-2px) translateZ(-30px);
+    }
+
+    100% {
+        width: 100%;
+        transform: scale(1.25, 1) skewX(20deg) translateY(3px) rotateX(-40deg) rotateY(-10deg) rotateZ(-15deg);
+    }
+}

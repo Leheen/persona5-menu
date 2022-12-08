@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Persona 5 Menu';
+    src: url('./assets/fonts/Persona5MenuFontPrototype-Regular.ttf') format('truetype'),
+        url('./assets/fonts/Persona5MenuFontPrototype-Regular.otf') format("opentype");
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FFF;
+}
