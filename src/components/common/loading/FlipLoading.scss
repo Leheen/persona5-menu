@@ -1,0 +1,44 @@
+.flip-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+
+    & div {
+        animation: flip 2s infinite linear;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:nth-child(1) {
+            background-image: url('../../../assets/img/loading/joker.png');
+            width: 150px;
+            height: 200px;
+        }
+
+        &:nth-child(2) {
+            background-image: url('../../../assets/img/loading/loading-text.png');
+            width: 150px;
+            height: 50px;
+            animation-delay: .5s;
+        }
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+
+    30% {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+
+    50% {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
