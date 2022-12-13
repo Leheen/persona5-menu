@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const MenuLink = ({ href='#', children }) => (
-    <a href={href} className="menu-link">
+const MenuLink = ({ to, children }) => (
+    <Link to={to} className="menu-link">
         <div className="shape-wrapper">
             <div className="shape red-fill">
                 <svg x="0px" y="0px" viewBox="0 0 108.1 47">
@@ -15,7 +16,11 @@ const MenuLink = ({ href='#', children }) => (
             </div>
         </div>
         {children}
-    </a>
+    </Link>
 );
+
+MenuLink.defaultProps = {
+    to: 'loading'
+};
 
 export default MenuLink;

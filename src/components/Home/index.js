@@ -8,7 +8,7 @@ import './Home.scss';
 const Home = () => (
     <>
         <StarBackground />
-        <div class="container">
+        <div className="container">
             <Menu />
         </div>
     </>

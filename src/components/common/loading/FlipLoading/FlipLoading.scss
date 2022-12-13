@@ -11,13 +11,13 @@
         background-repeat: no-repeat;
 
         &:nth-child(1) {
-            background-image: url('../../../assets/img/loading/joker.png');
+            background-image: url('../../../../assets/img/loading/joker.png');
             width: 150px;
             height: 200px;
         }
 
         &:nth-child(2) {
-            background-image: url('../../../assets/img/loading/loading-text.png');
+            background-image: url('../../../../assets/img/loading/loading-text.png');
             width: 150px;
             height: 50px;
             animation-delay: .5s;
