@@ -1,0 +1,60 @@
+$spotlight-mask-img: radial-gradient(circle, #000 40%, transparent 55%);
+$spotlight-default-img: linear-gradient(transparent, transparent);
+$spotlight-steps: 25;
+
+.spotlight-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    mask-image: $spotlight-mask-img, $spotlight-mask-img, $spotlight-mask-img, $spotlight-default-img;
+    mask-size: 220px 220px, 220px 220px, 220px 220px, 100% 100%;
+    mask-repeat: no-repeat;
+    animation: spotlight 30s linear both infinite alternate;
+    background-color: #C6C6C6;
+
+    & div {
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:nth-child(1) {
+            background-image: url('../../../../assets/img/loading/loading-text2.png');
+            width: 300px;
+            height: 300px;
+        }
+
+        &:nth-child(2) {
+            background-image: url('../../../../assets/img/loading/hat.png');
+            width: 150px;
+            height: 200px;
+            filter: drop-shadow(2px 6px 4px #000);
+            position: absolute;
+
+            &:after {
+                content: '';
+                background-image: url('../../../../assets/img/loading/eye.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 40px;
+                left: 70px;
+            }
+        }
+    }
+}
+
+@function getRandomPosition($base) {
+    @return random($base) * 1% - 20% random($base - 20) * 1% - 30%;
+}
+
+@keyframes spotlight {
+    @for $step from 0 through $spotlight-steps {
+        #{calc($step / $spotlight-steps * 100%)} {
+            mask-position: getRandomPosition(150), getRandomPosition(150), getRandomPosition(150);
+        }
+    }
+}
