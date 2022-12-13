@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/persona5-menu/static/css/main.e342d44c.css",
-    "main.js": "/persona5-menu/static/js/main.4452bb7e.js",
+    "main.css": "/persona5-menu/static/css/main.00ed42bb.css",
+    "main.js": "/persona5-menu/static/js/main.4358fe03.js",
     "static/js/787.bc775655.chunk.js": "/persona5-menu/static/js/787.bc775655.chunk.js",
     "static/media/background.png": "/persona5-menu/static/media/background.351f6287f6d083e50f64.png",
+    "static/media/joker.png": "/persona5-menu/static/media/joker.7641da6a9fd4c0734863.png",
     "static/media/Persona5MenuFontPrototype-Regular.otf": "/persona5-menu/static/media/Persona5MenuFontPrototype-Regular.eaf9adfa13ad3376ffd6.otf",
     "static/media/Persona5MenuFontPrototype-Regular.ttf": "/persona5-menu/static/media/Persona5MenuFontPrototype-Regular.eaf9adfa13ad3376ffd6.ttf",
+    "static/media/hat.png": "/persona5-menu/static/media/hat.cd3bd2475964eb6d89c4.png",
+    "static/media/loading-text2.png": "/persona5-menu/static/media/loading-text2.12c386a2b67790cf551b.png",
+    "static/media/eye.png": "/persona5-menu/static/media/eye.aa15c34a0c18de308c2b.png",
+    "static/media/loading-text.png": "/persona5-menu/static/media/loading-text.a8f3e8856f35f68b3ab0.png",
     "index.html": "/persona5-menu/index.html",
-    "main.e342d44c.css.map": "/persona5-menu/static/css/main.e342d44c.css.map",
-    "main.4452bb7e.js.map": "/persona5-menu/static/js/main.4452bb7e.js.map",
+    "main.00ed42bb.css.map": "/persona5-menu/static/css/main.00ed42bb.css.map",
+    "main.4358fe03.js.map": "/persona5-menu/static/js/main.4358fe03.js.map",
     "787.bc775655.chunk.js.map": "/persona5-menu/static/js/787.bc775655.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e342d44c.css",
-    "static/js/main.4452bb7e.js"
+    "static/css/main.00ed42bb.css",
+    "static/js/main.4358fe03.js"
   ]
 }
