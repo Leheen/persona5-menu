@@ -34,14 +34,13 @@ $spotlight-steps: 25;
 
             &:after {
                 content: '';
-                background-image: url('../../../../assets/img/loading/eye.png');
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 100px;
-                height: 100px;
+                background: url('../../../../assets/img/loading/hat-eye.png') 0 0 no-repeat;
                 position: absolute;
-                top: 40px;
-                left: 70px;
+                top: 2px;
+                left: 64px;
+                width: 192px;
+                height: 138px;
+                animation: eye-sprite 2.5s steps(10) infinite;
             }
         }
     }
@@ -56,5 +55,11 @@ $spotlight-steps: 25;
         #{calc($step / $spotlight-steps * 100%)} {
             mask-position: getRandomPosition(130), getRandomPosition(130), getRandomPosition(130);
         }
+    }
+}
+
+@keyframes eye-sprite {
+    100% {
+        background-position: -1920px;
     }
 }
